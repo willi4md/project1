@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
+        <title>Timeclock</title>
+        <link rel="stylesheet" href="C:\Users\Matthew\Desktop\project1\css\timeclock.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="C:\Users\Matthew\Desktop\project1\images\rocket.svg">
+    </head>
+
+    <body>
+
+        <nav class="navBar">
+
+            <ul class="navLinks">
+                <li><a id="dashboard" href="#">Dashboard</a></li>
+                <li><a id="timeclock" href="#">Timeclock</a></li>
+                <li><a id="schedule"  href="#">Schedule</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <!--Possible Features: Log Out confirmation, log out completion alert, float text when hovering that says "sign out"-->
+            <a class="signOut" href="#"><img src="C:\Users\Matthew\Desktop\project1\images\sign-out-alt-solid.svg" alt="signOutsvg"></a>
+            <!-- <button type="button" onclick="alert('You have been signed out!')">Sign Out</button> -->
+            <script src="nav.js"></script>
+        </nav>
+
+        <main class="main">
+
+            <aside id="sidebar">
+                <div class="logo">
+                    <img src="C:\Users\Matthew\Desktop\project1\images\infotab.svg" alt="infotab svg">
+                </div>
+                <h1>Welcome Back, Matthew!</h1>
+                <h2>Today's Date</h2>
+                <p>10/15</p>
+                <h2>Hours Worked Today</h2>
+                <p>4.5</p>
+                <h2>Break Times</h2>
+                <p>12:30pm, 3:15pm</p>
+                <h2>Hours Worked This Week</h2>
+                <p>36.5</p>
+                <h2>Employee ID</h2>
+                <p>111517460</p>
+            </aside>
+
+            <content id="cont">
+
+                <h1>Timeclock</h1>
+
+                <div class="timeCard">
+
+                    <button id="clockButton">
+                        Clock In
+                    </button>
+
+                    <img src="C:\Users\Matthew\Desktop\project1\images\clock.svg" alt="clock svg">
+
+                    <button id="clockButton">
+                        Clock Out
+                    </button>
+
+                </div>
+
+                <div class="weeklyPreviewCard">
+
+                    <div id="day1">
+                        <h2>Clock In:<h3>8:47am</h3></h2>
+                        <h2>Clock Out:<h3>4:05pm</h3></h2>
+                        <p>Monday 10/12</p>
+                    </div>
+                    <div id="day2">
+                        <h2>Clock In:<h3>8:30am</h3></h2>
+                        <h2>Clock Out: <h3>4:45pm</h3></h2>
+                        <p>Tuesday 10/13</p>
+                    </div>
+                    <div id="day3">
+                        <h2>Clock In: <h3>9:05am</h3></h2>
+                        <h2>Clock Out: <h3>5:00pm</h3></h2>
+                        <p>Wednesday 10/14</p>
+                    </div>
+                    <div id="day4">
+                        <img src="C:\Users\Matthew\Desktop\project1\images\noTime.svg" alt="no time svg">
+                        <p>Thursday 10/15</p>
+                    </div>
+                    <div id="day5">
+                        <img src="C:\Users\Matthew\Desktop\project1\images\noTime.svg" alt="no time svg">
+                        <p>Friday 10/16</p>
+                    </div>
+                    <div id="day6">
+                        <img src="C:\Users\Matthew\Desktop\project1\images\noTime.svg" alt="no time svg">
+                        <p>Saturday 10/17</p>
+                    </div>
+                    <div id="day7">
+                        <img src="C:\Users\Matthew\Desktop\project1\images\noTime.svg" alt="no time svg">
+                        <p>Sunday 10/18</p>
+                    </div>
+
+                </div>
+
+                <div class="timesheet">
+                    <h2>Timesheet</h2>
+                    <table style="width:80%">
+                        <tr>
+                          <th>Length</th>
+                          <th>Clock-In</th>
+                          <th>Clock-Out</th>
+                          <th>Date</th>
+                          <th>Break</th>
+                        </tr>
+                        <tr>
+                          <td>1h, 30m</td>
+                          <td>7:30am</td>
+                          <td>9:00am</td>
+                          <td>Oct 14</td>
+                          <!--Eventually want to replace the "No Break" table data with an icon :) -->
+                          <td>No Break</td>
+                        </tr>
+                        <tr>
+                            <td>2h, 30m</td>
+                            <td>7:30am</td>
+                            <td>10:00am</td>
+                            <td>Oct 12</td>
+                            <!--Eventually want to replace the "No Break" table data with an icon :) -->
+                            <td>No Break</td>
+                          </tr>
+                          <tr>
+                            <td>3h, 30m</td>
+                            <td>7:30am</td>
+                            <td>11:00am</td>
+                            <td>Oct 9</td>
+                            <!--Eventually want to replace the "No Break" table data with an icon :) -->
+                            <td>No Break</td>
+                          </tr>
+                          <tr>
+                            <td>2h, 15m</td>
+                            <td>4:45pm</td>
+                            <td>7:00pm</td>
+                            <td>Oct 8</td>
+                            <!--Eventually want to replace the "No Break" table data with an icon :) -->
+                            <td>No Break</td>
+                          </tr>
+                      </table>
+                </div>
+
+            </content>
+
+            <footer class="footer">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <h1>Follow us on social media!</h1>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-reddit"></a>
+            </footer>
+
+            <div class="reportButton">
+                <button>Bug? Report it here!</button>
+            </div>
+
+        </main>
+
+    </body>
+
+</html>

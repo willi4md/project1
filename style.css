@@ -1,0 +1,153 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+body {
+    background: linear-gradient(#88BDBC ,#254E58);
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+}
+
+/*This encases both the sign-in and sign-up FORMS*/
+.signin {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Changes elements of form type*/
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+form.sign-in-form {
+    z-index: 2;
+}
+
+form.sign-up-form {
+    z-index: 1;
+    opacity: 0;
+}
+
+.title { 
+    font-size: 2.2rem;
+    color: darkslategray;
+    margin-bottom: 10px;
+}
+
+/*Encases the username and password form fields*/
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: lightgray;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+}
+
+/*targets the icons*/
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: darkgray;
+    font-size: 1.1rem;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    /* text-decoration: underline; */
+}
+
+.inpout-field input::placeholder {
+    color: lightgray;
+    font-weight: 500;
+}
+
+.btn {
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #5995fd;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #4d84e2;
+}
+
+.social-text {
+    padding: .7rem 0;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 46px;
+    width: 46px;
+    border: 2px solid #333;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #4481eb;
+    border-color: #4481eb;
+}
